@@ -331,6 +331,7 @@ function sync_zshrc() {
 # Automatically sync the .zshrc file when it's modified
 function zshrc_modified() {
     sync_zshrc
+    sleep 1
 }
 autoload -Uz add-zsh-hook
 add-zsh-hook zshexit zshrc_modified
