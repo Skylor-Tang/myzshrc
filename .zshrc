@@ -304,16 +304,16 @@ function sync_zshrc() {
     # Check if the Git repository has been initialized
     if [ ! -d "$HOME/.zshrc-sync" ]; then
         git clone ${ZSHRC_REPO_URL} "$HOME/.zshrc-sync"
+
+        # Backup the current .zshrc file
+        cp "${ZSHRC_FILE_PATH}" "$HOME/.zshrc-bak"
+
+        # Copy the current .zshrc file to the Git repository
+        cp "${ZSHRC_FILE_PATH}" "$HOME/.zshrc-sync/.zshrc"
+
+        # Create a symlink to the .zshrc file in the Git repository
+        ln -sf "$HOME/.zshrc-sync/.zshrc" "${ZSHRC_FILE_PATH}"
     fi
-
-    # Backup the current .zshrc file
-    cp "${ZSHRC_FILE_PATH}" "$HOME/.zshrc-bak"
-
-    # Copy the current .zshrc file to the Git repository
-    cp "${ZSHRC_FILE_PATH}" "$HOME/.zshrc-sync/.zshrc"
-
-    # Create a symlink to the .zshrc file in the Git repository
-    ln -sf "$HOME/.zshrc-sync/.zshrc" "${ZSHRC_FILE_PATH}"
 
     # Check if there are any changes to commit
     cd "$HOME/.zshrc-sync"
