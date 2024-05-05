@@ -117,8 +117,8 @@ source $ZPLUG_HOME/init.zsh
 zplug "zsh-users/zsh-autosuggestions"
 zplug "marlonrichert/zsh-autocomplete"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "Skylor-Tang/auto-venv", use:auto-venv.zsh
-zplug "Skylor-Tang/zshrc-sync", use:zshrc-sync.zsh
+zplug "Skylor-Tang/auto-venv", use:auto-venv.zsh, from:github, at:main
+zplug "Skylor-Tang/zshrc-sync", use:zshrc-sync.zsh, from:github, at:main
 zplug "spaceship-prompt/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
 # Install plugins if there are plugins that have not been installed
