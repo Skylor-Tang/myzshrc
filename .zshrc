@@ -102,6 +102,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Export 
+# >>> zshrc-sync settings >>>
+export ZSHRC_REPO_URL='git@github.com:Skylor-Tang/myzshrc.git'
+export ZSHRC_FILE_PATH="$HOME/.zshrc"
+# <<< zshrc-sync settings <<<
+
 # >>> zplug settings >>>
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
@@ -149,11 +155,6 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bot
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
 # <<<  Homebrew settings <<<
-
-# >>> zshrc-sync settings >>>
-export ZSHRC_REPO_URL='git@github.com:Skylor-Tang/myzshrc.git'
-export ZSHRC_FILE_PATH="$HOME/.zshrc"
-# <<< zshrc-sync settings <<<
 
 # Remove duplicate entries from PATH
 # ==== 
