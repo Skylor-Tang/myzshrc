@@ -258,6 +258,7 @@ alias speed='wget -O /dev/null http://speedtest.tele2.net/10MB.zip'
 alias speedtest='/usr/bin/open -a "/Applications/Google Chrome.app" "http://www.speedtest.net/"'
 ### fast
 alias vimzshrc="vim ~/.zshrc"
+alias vim="nvim"
 ### docker
 alias dms="docker inspect -f '{{range .Mounts}}{{.Source}} -> {{.Destination}} (RW: {{.RW}}, Mode: {{.Mode}}){{println}}{{end}}'"
 alias dip="docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
