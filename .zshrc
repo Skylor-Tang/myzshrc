@@ -298,3 +298,5 @@ watch_python() {
     /Users/tangmeijian/miniconda3/bin/python /Users/tangmeijian/.my-script/python/watch_python.py
 }
 
+
+[[ -s "/Users/tangmeijian/.gvm/scripts/gvm" ]] && source "/Users/tangmeijian/.gvm/scripts/gvm"
