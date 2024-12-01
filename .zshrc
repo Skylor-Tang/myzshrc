@@ -300,3 +300,5 @@ watch_python() {
 
 
 # GVM Settings
+
+[[ -s "/Users/tangmeijian/.gvm/scripts/gvm" ]] && source "/Users/tangmeijian/.gvm/scripts/gvm"
