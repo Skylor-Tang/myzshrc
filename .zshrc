@@ -300,3 +300,6 @@ watch_python() {
 
 
 # GVM Settings
+export GO_BINARY_BASE_URL=https://golang.google.cn/dl/
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+export GOROOT_BOOTSTRAP=$GOROOT
