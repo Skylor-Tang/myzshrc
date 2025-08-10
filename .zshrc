@@ -278,7 +278,7 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # terminal proxy
-export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897
 
 # Created by `pipx` on 2024-04-14 09:41:58
 export PATH="$PATH:/Users/tangmeijian/.local/bin"
