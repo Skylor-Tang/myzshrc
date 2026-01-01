@@ -298,8 +298,3 @@ watch_python() {
     /Users/tangmeijian/miniconda3/bin/python /Users/tangmeijian/.my-script/python/watch_python.py
 }
 
-
-# GVM Settings
-
-# asdf golang-plug
-source ${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/golang/set-env.zsh
