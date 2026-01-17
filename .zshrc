@@ -298,3 +298,6 @@ watch_python() {
     /Users/tangmeijian/miniconda3/bin/python /Users/tangmeijian/.my-script/python/watch_python.py
 }
 
+
+# opencode
+export PATH=/Users/tangmeijian/.opencode/bin:$PATH
